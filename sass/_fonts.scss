@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+
+@mixin regular {
+    font-family: "Roboto Mono";
+}
+
+@mixin bold {
+    @include regular;
+    font-weight: 600;
+}
+
+@mixin italic {
+    @include regular;
+    font-style: italic;
+}

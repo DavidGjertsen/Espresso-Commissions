@@ -1,0 +1,117 @@
+@use "meyer";
+@use "colors";
+@use "fonts";
+@use "default" as defaults;
+
+header {
+    background-color: colors.$teal;
+    color: colors.$gray;
+    text-align: center;
+
+    #headerContent {
+        max-width: 1080px;
+        margin: 0 auto;
+        padding: defaults.$base-unit * 4;
+
+        p {
+            font-size: 1.25rem;
+        }
+
+        a {
+            display: inline-block;
+            color: colors.$gray;
+            font-size: 1.125rem;
+            margin: 0 defaults.$base-unit;
+
+            &:hover {
+                color: colors.$gray-hover;
+            }
+        }
+    }
+}
+
+main {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: defaults.$base-unit * 2;
+
+    section {
+        margin-bottom: defaults.$base-unit * 2;
+        border-bottom: 1px solid colors.$white;
+        padding-bottom: defaults.$base-unit;
+    }
+
+    #pricing {
+        .price:first-of-type {
+            margin-bottom: defaults.$base-unit * 2;
+        }
+
+        table {
+            width: 100%;
+            text-align: center;
+            font-size: 1.25rem;
+            table-layout: fixed;
+
+            @media screen and (max-width: 700px) {
+                font-size: 1rem;
+            }
+
+            @media screen and (max-width: 420px) {
+                font-size: .85rem;
+            }
+
+            tr {
+                &:first-of-type {
+                    border-bottom: 1px solid colors.$white;
+                }
+
+                &:nth-of-type(2n) {
+                    background-color: colors.$gray-hover;
+                }
+
+                th {
+                    @include fonts.bold;
+
+                    &:first-of-type {
+                        text-align: left;
+                    }
+                }
+
+                td, th {
+                    padding: defaults.$base-unit;
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+
+    #info {
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: defaults.$base-unit * 2;
+
+            @media only screen and (max-width: 600px) {
+                display: block;
+            }
+        }
+
+        .grid-5 {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-gap: defaults.$base-unit * 2;
+
+            @media only screen and (max-width: 850px) {
+                display: block;
+            }
+
+            p {
+                font-size: .85rem;
+            }
+        }
+    }
+
+    footer {
+        text-align: center;
+    }
+}

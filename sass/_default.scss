@@ -1,0 +1,92 @@
+@use "colors";
+@use "fonts";
+
+$base-unit: 12px;
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: colors.$gray;
+    color: colors.$white;
+    @include fonts.regular;
+    font-size: 1rem;
+    line-height: 1.375;
+    min-width: 360px;
+}
+
+h1, h2, h3, h4, h5, h6, p, li {
+    padding-bottom: $base-unit;
+}
+
+h1, h2, h3, h4, h5, h6, strong {
+    @include fonts.bold;
+}
+
+em {
+    @include fonts.italic;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 2rem;
+    padding-top: $base-unit * 4;
+}
+
+h3 {
+    font-size: 1.5rem;
+    padding-top: $base-unit * 2;
+}
+
+h4 {
+    font-size: 1.25rem;
+    padding-top: $base-unit;
+}
+
+ul {
+    list-style: disc;
+    li {
+        margin-left: 25px;
+    }
+}
+
+ol {
+    list-style: decimal;
+}
+
+a {
+    color: colors.$white;
+
+    &:hover {
+        color: colors.$teal;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        padding-top: $base-unit * 2;
+    }
+
+    h3 {
+        font-size: 1.25rem;
+        padding-top: $base-unit;
+    }
+
+    h4 {
+        font-size: 1rem;
+    }
+}

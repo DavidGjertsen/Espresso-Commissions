@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,600;1,400;1,600&display=swap");
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #262626;
+  color: #FFF;
+  font-family: "Roboto Mono";
+  font-size: 1rem;
+  line-height: 1.375;
+  min-width: 360px;
+}
+
+h1, h2, h3, h4, h5, h6, p, li {
+  padding-bottom: 12px;
+}
+
+h1, h2, h3, h4, h5, h6, strong {
+  font-family: "Roboto Mono";
+  font-weight: 600;
+}
+
+em {
+  font-family: "Roboto Mono";
+  font-style: italic;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 2rem;
+  padding-top: 48px;
+}
+
+h3 {
+  font-size: 1.5rem;
+  padding-top: 24px;
+}
+
+h4 {
+  font-size: 1.25rem;
+  padding-top: 12px;
+}
+
+ul {
+  list-style: disc;
+}
+ul li {
+  margin-left: 25px;
+}
+
+ol {
+  list-style: decimal;
+}
+
+a {
+  color: #FFF;
+}
+a:hover {
+  color: #63DACC;
+}
+
+@media screen and (max-width: 700px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    padding-top: 24px;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+    padding-top: 12px;
+  }
+
+  h4 {
+    font-size: 1rem;
+  }
+}
+header {
+  background-color: #63DACC;
+  color: #262626;
+  text-align: center;
+}
+header #headerContent {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 48px;
+}
+header #headerContent p {
+  font-size: 1.25rem;
+}
+header #headerContent a {
+  display: inline-block;
+  color: #262626;
+  font-size: 1.125rem;
+  margin: 0 12px;
+}
+header #headerContent a:hover {
+  color: #525252;
+}
+
+main {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 24px;
+}
+main section {
+  margin-bottom: 24px;
+  border-bottom: 1px solid #FFF;
+  padding-bottom: 12px;
+}
+main #pricing .price:first-of-type {
+  margin-bottom: 24px;
+}
+main #pricing table {
+  width: 100%;
+  text-align: center;
+  font-size: 1.25rem;
+  table-layout: fixed;
+}
+@media screen and (max-width: 700px) {
+  main #pricing table {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 420px) {
+  main #pricing table {
+    font-size: 0.85rem;
+  }
+}
+main #pricing table tr:first-of-type {
+  border-bottom: 1px solid #FFF;
+}
+main #pricing table tr:nth-of-type(2n) {
+  background-color: #525252;
+}
+main #pricing table tr th {
+  font-family: "Roboto Mono";
+  font-weight: 600;
+}
+main #pricing table tr th:first-of-type {
+  text-align: left;
+}
+main #pricing table tr td, main #pricing table tr th {
+  padding: 12px;
+  vertical-align: middle;
+}
+main #info .grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 24px;
+}
+@media only screen and (max-width: 600px) {
+  main #info .grid-2 {
+    display: block;
+  }
+}
+main #info .grid-5 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 24px;
+}
+@media only screen and (max-width: 850px) {
+  main #info .grid-5 {
+    display: block;
+  }
+}
+main #info .grid-5 p {
+  font-size: 0.85rem;
+}
+main footer {
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */
