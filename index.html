@@ -9,70 +9,119 @@
         />
         <link rel="icon" href="images/icon.png"/>
         <link rel="stylesheet" name="text/css" href="css/style.css" media="screen" />
-        <title>EspressoTheWolf Commissions</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="js/nav.js"></script>
+        <title>Home | EspressoTheWolf</title>
     </head>
     <body>
-        <header>
+        <header id="top">
             <div id="headerContent">
                 <h1>EspressoTheWolf</h1>
-                <p>Digital Illustrator and Character&nbsp;Artist</p>
-                <nav>
-                    <a href="https://twitter.com/EspressoTheWolf">@EspressoTheWolf</a>
-                    <a href="mailto:espressothewolf@gmail.com">espressothewolf@gmail.com</a>
-                    <a href="https://discord.com/">Espresso#4105</a>
-                </nav>
+                <p>Digital artist and coffee&nbsp;addict</p>
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#pricing">Commission Prices</a></li>
+                    <li><a href="#info">Additional Information</a></li>
+                    <li><a href="#terms">Terms and Conditions</a></li>
+                </ul>
             </div>
         </header>
         <main>
+            <section id="about">
+                <div id="image">
+                    <img id="me" src="images/me.jpg" />
+                    <div id="socials">
+                        <a href="https://twitter.com/EspressoTheWolf" target="_blank" rel="noreferrer"><img src="images/simple-icons_twitter.svg" alt="Link to Twitter"/></a>
+                        <a href="https://ko-fi.com/espressothewolf" target="_blank" rel="noreferrer"><img src="images/simple-icons_kofi.svg" alt="Link to Ko-Fi"/></a>
+                        <a href="https://www.twitch.tv/espressothewolf" target="_blank" rel="noreferrer"><img src="images/simple-icons_twitch.svg" alt="Link to Twitch"/></a>
+                        <a href="mailto:espressothewolf@gmail.com"><img src="images/ic_sharp-email.svg" alt="Link to Email"/></a>
+                    </div>
+                </div>
+                <div id="text">
+                    <p>Heya! My name is Espresso, and I'm a digital artist and caffeine addict. My work ranges from soft boys to badass girls and everything in between.</p>
+                    <p>My go-to aesthetic is cute boys in hoodies, but I draw all kinds of things! I love having the chance to try something new, so I'll take on (most) anything thrown my way.</p>
+                    <p>My tools:</p>
+                    <ul>
+                        <li>Clip Studio Paint</li>
+                        <li>Huion Kamvas GT-191</li>
+                    </ul>
+                </div>
+
+            </section>
+
+            <section id="gallery">
+                <h2>Gallery</h2>
+                <div id="images">
+                    <div class="imagebox">
+                        <img src="images/gallery/maeve_sunset.jpg" />
+                    </div>
+                    <div class="imagebox">
+                        <img src="images/gallery/onika_redesign.jpg" />
+                    </div>
+                    <div class="imagebox">
+                        <img src="images/gallery/gizmo_matching.jpg" />
+                    </div>
+                    <div class="imagebox">
+                        <img src="images/gallery/lawrence_bennett.jpg" />
+                    </div>
+                    <div class="imagebox">
+                        <img src="images/gallery/Slushie_Giveaway.jpg" />
+                    </div>
+                    <div class="imagebox">
+                        <img src="images/gallery/future_rat_redraw.jpg" />
+                    </div>
+                </div>
+                <div id="links">
+                    <a href="https://ko-fi.com/espressothewolf/gallery">View more on Ko-Fi</a>
+                    <a href="https://twitter.com/EspressoTheWolf">View more on Twitter</a>
+                </div>
+            </section>
+
             <section id="pricing">
                 <div class="price">
-                    <h2>Commissions</h2>
+                    <h2>Commission Prices</h2>
+                    <p>Please note that these prices are subject to change. I may charge an additional cost for particularly complicated or time-consuming commissions. Please see my <a href="#terms">terms</a> for more information.</p>
+
+                    <h3>Basic Commissions</h3>
                     <table>
                         <tr>
                             <th>Type</th>
                             <th>Sketch</th>
-                            <th>Colored</th>
                             <th>Rendered</th>
                         </tr>
                         <tr>
-                            <th>Bust</th>
-                            <td>$7</td>
-                            <td>$20</td>
-                            <td>$25</td>
+                            <th>Bust / Icon</th>
+                            <td>$6</td>
+                            <td>$30</td>
                         </tr>
                         <tr>
                             <th>Thigh-up</th>
-                            <td>$10</td>
-                            <td>$25</td>
-                            <td>$30</td>
+                            <td>$8</td>
+                            <td>$40</td>
                         </tr>
                         <tr>
                             <th>Fullbody</th>
-                            <td>$12</td>
-                            <td>$30</td>
-                            <td>$35</td>
+                            <td>$10</td>
+                            <td>$50</td>
                         </tr>
                         <tr>
-                            <th>Multiple Characters</th>
-                            <td>$25</td>
-                            <td>$55</td>
-                            <td>$60</td>
+                            <th>Illustration</th>
+                            <td>$15</td>
+                            <td>$75</td>
                         </tr>
                     </table>
                 </div>
                 <div class="price">
-                    <h2>Special Commissions</h2>
+                    <h3>Comic | Price varies</h3>
+                    <p>Comics are priced on a per-panel basis at 75% of the above rates.</p>
 
-                    <h3>Comics</h3>
-                    <p>Comics are priced per panel at 75% of the above rates. For example, a rendered page with 2 busts, 1 thigh-up, and 1 fullbody would cost ($25 + $25 + $30 + $35) * 75% = $86.25.</p>
+                    <h3>Animation | Price varies</h3>
+                    <p>These will be priced on a per-project basis based on complexity and time.</p>
 
-                    <h3>Ref Sheet</h3>
-                    <p>Reference sheets start at $70. For that price you’ll get two rendered drawings of your character in any pose, an information panel, and a color reference. Anything on top of that will be charged extra based on how complicated it is.</p>
-
-                    <h3>Animation</h3>
-                    <p>Due to the complicated and time-consuming nature of animation these will be priced by complexity. A simple loop will likely be around the same price as a regular commission, while a fully animated scene will cost significantly more. </p>
+                    <h3>Reference Sheet | $90 base price</h3>
+                    <p>A base reference sheets include two drawings of your character in the poses and outfits you prefer. Addons and additional features will be charged an additional cost based on complexity.</p>
                 </div>
-                <p><em>Please note that the above prices are subject to change. I may also charge more for particularly complicated or time-consuming commissions.</em></p>
             </section>
 
             <section id="info">
@@ -80,22 +129,20 @@
 
                 <div class="grid-2">
                     <div>
-                        <h3>What I will draw:</h3>
+                        <h3>I will draw:</h3>
                         <ul>
-                            <li>Furries, humans, demons, whatever. I'm not picky.</li>
-                            <li>Your characters.</li>
-                            <li>My characters.</li>
-                            <li>Characters belonging to other people <em>with</em> their permission.</li>
-                            <li>Suggestive poses and light or artistic nudity.</li>
+                            <li>Furries, humans, demons, etc...</li>
+                            <li>Characters that I own</li>
+                            <li>Suggestive poses / outfits, light or artistic nudity</li>
+                            <li>Light gore and / or heavy themes</li>
                         </ul>
                     </div>
 
                     <div>
-                        <h3>What I won't draw:</h3>
+                        <h3>I will not draw:</h3>
                         <ul>
-                            <li>Characters belonging to other people <em>without</em> their permission.</li>
-                            <li>Certain characters from TV shows and other media.</li>
-                            <li>Outright NSFW and/or fetish art.</li>
+                            <li>Outright NSFW, fetish, or illegal content</li>
+                            <li>Artwork depicting extreme violence or gore</li>
                         </ul>
                     </div>
                 </div>
@@ -103,73 +150,131 @@
                 <h3>Timeline</h3>
                 <div class="grid-5">
                     <div>
-                        <h4>Introduction</h4>
-                        <p>You message me and we discuss what you would like. I provide an estimate. Once we come to an agreement, I will send you an invoice via&nbsp;PayPal.</p>
+                        <h4>Inquiry</h4>
+                        <p>We will discuss your inquiry, settle on a price, and handle payment.</p>
                     </div>
 
                     <div>
                         <h4>Sketch Phase</h4>
-                        <p>I work on the sketch, sending periodic updates and making changes based on your feedback. During this time you are able to cancel for a full refund.</p>
+                        <p>I sketch out the drawing, providing updates and making changes as necessary.</p>
                     </div>
 
                     <div>
                         <h4>Approval</h4>
-                        <p>Once the sketch is completed I will send it to you for any final changes. Once you approve the artwork is mostly locked-in, so don't waste the opportunity to make sweeping changes.</p>
+                        <p>I submit the sketch to you for final adjustments and approval.</p>
                     </div>
 
                     <div>
                         <h4>Drawing Phase</h4>
-                        <p>I will work towards finishing the commission, sending you periodic updates as I deem necessary or whenever you ask for them. If you cancel during this phase you will not recieve a full refund. <a href="#refunds">read&nbsp;more.</a></p>
+                        <p>I work on finishing the drawing, providing updates as necessary.</p>
                     </div>
 
                     <div>
                         <h4>Completion</h4>
-                        <p>Once your artwork is completed, I will present it for any final changes. Once I recieve payment the final high-resolution image(s) will be provided. Enjoy your beautiful new&nbsp;artwork.</p>
+                        <p>I present the final piece for final tweaks and approval.</p>
                     </div>
                 </div>
 
-                <h3>What do you get out of it?</h3>
-                <p>When all is said and done, you'll get a full-resolution JPG or GIF of your artwork. I will also include other resolutions and file types by request. If you're aiming for a specific resolution, let me know early so that I can plan&nbsp;ahead.</p>
+                <h3>What you get</h3>
+                <p>You will recieve a full-resolution file in JPG or GIF format. You are also able to request:</p>
+                <ul>
+                    <li>Alternate images, resolutions, file types.</li>
+                    <li>A timelapse video of the drawing process.</li>
+                </ul>
 
+                <h3>Inquiries</h3>
+                <p>If you'd like to inquire about a commission or have any other questions about me and my work, please to get in touch! I prefer the following methods:</p>
+                <ul>
+                   <li>Email: <a href="mailto:espressothewolf@gmail.com">espressothewolf@gmail.com</a></li>
+                   <li>Twitter: <a href="https://twitter.com/EspressoTheWolf" target="_blank" rel="noreferrer">@EspressoTheWolf</a></li>
+                </ul>
+                <p>Please make sure you have read and agree to the <a href="#terms">terms and conditions</a> before submitting an inquiry.</p>
             </section>
 
             <section id="terms">
                 <h2>Terms and Conditions</h2>
-                <p><strong><em>All commissioners must be 16 or older. By commissioning me you agree to follow the following terms and&nbsp;conditions.</em></strong></p>
+                <p><strong>By submitting an inquiry you agree to these terms.</strong></p>
 
-                <h3>Changes</h3>
-                <p>I allow large changes during the sketch phase, where I have the flexibility to make sweeping changes or start over without losing much progress. Once you approve the sketch and I move forward, making changes will be more difficult.</p>
-                <p>Small changes after the sketch is approved are fine, but larger changes may result in an additional charge depending the amount of extra work&nbsp;required.</p>
+                <h3>General Terms</h3>
+                <ul>
+                    <li>All commissioners must be 18 or older.</li>
+                    <li>Inquiries containing anything in my "Will not draw" list will be ignored, and the commissioner may be blacklisted.</li>
+                    <li>Visual references are to be provided at the time of inquiry. An inconvenience fee may be added if references are not provided.</li>
+                    <li>Deadlines, if any, must be made clear up front. An additional cost may be added for rush work.</li>
+                    <li>The commissioner must have permission to use all characters included in the inquiry.</li>
+                </ul>
 
                 <h3>Payment</h3>
-                <p>An invoice will be sent via PayPal once I begin work. Full payment including any extra charges must be submitted before I will send the final high-resolution file or&nbsp;files.</p>
-                <p>For first-time commissioners and commissions over $50, I ask for at least 50% up front before I&nbsp;begin.</p>
-                <p>In the case of non-payment or chargebacks, you will be blacklisted and any artwork will be made publically available. You will still be expected to pay in&nbsp;full.</p>
+                <ul>
+                    <li>Payment will be through PayPal invoice.</li>
+                    <li>First-time commissioners and commissions priced at $60 or more will be required to submit at least 50% payment up-front.</li>
+                    <li>Additional charges may be added for complexity, extra characters, etc.</li>
+                    <li>Full payment, including any additional charges, must be recieved before the commissioner recieves their final file(s).</li>
+                    <li>Failure to pay, charging back, or attempting to dispute the payment will result in the commissioner being blacklisted.</li>
+                    <li>Payment using cryptocurrencies will not be accepted, and the commissioner will be blacklisted.</li>
+                </ul>
 
-                <h3 id="refunds">Cancellation and Refunds</h3>
-                <p>During the sketch phase you may cancel at no cost to you, and any payment you've already sent will be refunded in&nbsp;full.</p>
-                <p>If you cancel <em>after</em> you approve the sketch, you agree to pay for whatever I finish before you cancelled. Whatever is left will be refunded, and I will clean up the unfinished artwork so you still recieve a presentable piece for your&nbsp;trouble.
-             </section>
+                <h3>Changes</h3>
+                <ul>
+                    <li>The commissioner will be sent a sketch for changes and approval before moving on to finishing stages.</li>
+                    <li>Major changes may be made prior to approval. Major changes after approval may incur an additional cost depending on the amount of work involved.</li>
+                    <li>Minor changes may be made at any stage in the process.</li>
+                </ul>
 
-             <section id="#closing">
-                <p>If you would like to commission a piece, please get in touch via one of the following:</p>
-                <nav>
-                    <p>Twitter: <a href="https://twitter.com/EspressoTheWolf" target="_blank" rel="noreferrer">@EspressoTheWolf</a></p>
-                    <p>Email: <a href="mailto:espressothewolf@gmail.com">espressothewolf@gmail.com</a></p>
-                    <p>Discord: <a href="https://discord.com/" target="_blank" rel="noreferrer">Espresso#4105</a></p>
-                </nav>
-                <p>I'm looking forward to working with you.</p>
-             </section>
-             <footer>
-                 <p id="copyright">&copy; <script type="text/javascript">
+                <h3>Refunds and Cancellation</h3>
+                <ul>
+                    <li>I may refuse or cancel any commission at my discretion. If I cancel for any reason, the commissioner will recieve a full refund.</li>
+                    <li>The commissioner may cancel prior to approval of the sketch for a full refund.</li>
+                    <li>The commissioner will recieve a partial refund for cancellation after approval of the sketch, based on the amount of work completed at the time of cancellation.</li>
+                </ul>
+
+                <h3>Rights and Agreements</h3>
+                <ul>
+                    <li>I reserve all rights to the commissioned artwork, including use for personal promotion, advertising, portfolio work, etc.</li>
+                    <li>The Commissioner may use commissioned artwork for personal use, including icons, banners, public postings, personal branding, etc.</li>
+                    <li>The Commissioner may NOT use commissioned artwork for commercial use.</li>
+                    <li>The artwork may NOT to be tokenized.</li>
+                    <li>The commissioner may NOT edit the artwork, nor remove or obscure my watermark, nor claim the commissioned work as their own artwork.</li>
+                    <li>The commissioner is expected to provide credit where reasonable. Please credit the artist as EspressoTheWolf or @EspressoTheWolf.</li>
+                    <li>If traded, resold, or gifted, the new owner(s) must agree to these terms.</li>
+                </ul>
+            </section>
+            <section id="thanks">
+                <h3>Thank you!</h3>
+            </section>
+            <footer>
+                <p id="copyright">&copy; <script type="text/javascript">
                     const year = new Date().getFullYear();
                     if(year == "2021") {
                         document.write("2021");
                     } else {
                         document.write("2021 - " + year)
                     }
-                 </script> David Gjertsen</p>
-             </footer>
+                </script> David Gjertsen</p>
+            </footer>
         </main>
+
+        <div id="navbtn">
+            <img src="images/menu.svg" />
+        </div>
+
+        <div id="pagenav">
+            <ul>
+                <li><a class="navlink" href="#top">Back to Top</a></li>
+                <li><a class="navlink" href="#about">About Me</a></li>
+                <li><a class="navlink" href="#gallery">Gallery</a></li>
+                <li><a class="navlink" href="#pricing">Commission Prices</a></li>
+                <li><a class="navlink" href="#info">Additional Information</a></li>
+                <li><a class="navlink" href="#terms">Terms and Conditions</a></li>
+                <li>
+                    <div>
+                        <a href="https://twitter.com/EspressoTheWolf" target="_blank" rel="noreferrer"><img src="images/simple-icons_twitter.svg" alt="Link to Twitter"/></a>
+                        <a href="https://ko-fi.com/espressothewolf" target="_blank" rel="noreferrer"><img src="images/simple-icons_kofi.svg" alt="Link to Ko-Fi"/></a>
+                        <a href="https://www.twitch.tv/espressothewolf" target="_blank" rel="noreferrer"><img src="images/simple-icons_twitch.svg" alt="Link to Twitch"/></a>
+                        <a href="mailto:espressothewolf@gmail.com"><img src="images/ic_sharp-email.svg" alt="Link to Email"/></a>
+                    </div>
+                </li>
+            </ul>
+        </div>
     </body>
 </html>
