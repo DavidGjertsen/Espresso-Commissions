@@ -4,90 +4,122 @@
 $base-unit: 12px;
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    background-color: colors.$gray;
-    color: colors.$white;
-    @include fonts.regular;
-    font-size: 1rem;
-    line-height: 1.375;
-    min-width: 360px;
+  background-color: colors.$gray;
+  color: colors.$white;
+  @include fonts.regular;
+  font-size: 1.1rem;
+  line-height: 1.375;
+  min-width: 360px;
 }
 
-h1, h2, h3, h4, h5, h6, p, li {
-    padding-bottom: $base-unit;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding-bottom: $base-unit * 1.5;
 }
 
-h1, h2, h3, h4, h5, h6, strong {
-    @include fonts.bold;
+li {
+  padding-bottom: $base-unit;
+}
+
+ul, ol {
+  padding-bottom: $base-unit * 0.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+  @include fonts.header-bold;
+  vertical-align: center;
 }
 
 em {
-    @include fonts.italic;
+  @include fonts.italic;
 }
 
 h1 {
-    font-size: 4rem;
+  font-size: 4rem;
 }
 
 h2 {
-    font-size: 2rem;
-    padding-top: $base-unit * 4;
+  font-size: 2rem;
+  padding-top: $base-unit * 4;
 }
 
 h3 {
-    font-size: 1.5rem;
-    padding-top: $base-unit * 2;
+  font-size: 1.5rem;
+  padding-top: $base-unit * 3;
 }
 
 h4 {
-    font-size: 1.25rem;
-    padding-top: $base-unit;
+  font-size: 1.25rem;
+  padding-top: $base-unit * 2;
 }
 
 ul {
-    list-style: disc;
-    li {
-        margin-left: 25px;
-    }
+  list-style: disc;
+  li {
+    margin-left: 25px;
+  }
 }
 
 ol {
-    list-style: decimal;
+  list-style: decimal;
 }
 
 a {
-    color: colors.$white;
-    transition: color .1s ease-out;
+  color: colors.$white;
+  transition: color 0.1s ease-out;
 
-    &:hover {
-        color: colors.$teal;
-    }
+  &:hover {
+    color: colors.$teal;
+  }
 }
 
 @media screen and (max-width: 700px) {
+  h1 {
+    font-size: 2.25rem;
+  }
 
-    h1 {
-        font-size: 2.25rem;
-    }
+  h2 {
+    font-size: 1.5rem;
+    padding-top: $base-unit * 2;
+  }
 
-    h2 {
-        font-size: 1.5rem;
-        padding-top: $base-unit * 2;
-    }
+  h3 {
+    font-size: 1.25rem;
+    padding-top: $base-unit;
+  }
 
-    h3 {
-        font-size: 1.25rem;
-        padding-top: $base-unit;
-    }
+  h4 {
+    font-size: 1rem;
+  }
+}
 
-    h4 {
-        font-size: 1rem;
-    }
+.strike {
+  text-decoration: line-through;
+}
+
+.open {
+  color: colors.$teal;
+}
+
+.closed {
+  color: #ff6188;
 }
